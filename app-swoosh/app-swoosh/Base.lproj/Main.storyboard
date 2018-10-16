@@ -184,7 +184,7 @@
                                 <rect key="frame" x="20" y="64" width="29" height="24"/>
                                 <state key="normal" image="backButton"/>
                                 <connections>
-                                    <segue destination="moC-yX-8eA" kind="unwind" unwindAction="unwindFromSkillViewControllerWithUnwindSegue:" id="ZxY-3J-pwC"/>
+                                    <segue destination="moC-yX-8eA" kind="unwind" unwindAction="unwindFromLeagueViewControllerWithUnwindSegue:" id="fzV-h7-p8v"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -249,6 +249,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPi-6l-zYA">
                                 <rect key="frame" x="20" y="64" width="29" height="24"/>
                                 <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="cCM-Q7-Imx" kind="unwind" unwindAction="unwindFromSkillViewControllerWithUnwindSegue:" id="hXQ-Ft-ltQ"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="4y5-0g-4EG">
                                 <rect key="frame" x="30" y="244" width="354" height="55"/>
@@ -312,6 +315,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L2Y-dh-8C0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="cCM-Q7-Imx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1626" y="133"/>
         </scene>

@@ -40,4 +40,14 @@ class LeagueViewController: UIViewController {
     @IBAction func onNextTapped(_ sender: Any) {
         performSegue(withIdentifier: "skillViewControllerSegue", sender: self)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let skillViewController = segue.destination as? SkillViewController {
+            skillViewController.player = player
+        }
+    }
+    
+    @IBAction func unwindFromSkillViewController(unwindSegue: UIStoryboardSegue) {
+        
+    }
 }
